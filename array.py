@@ -149,8 +149,6 @@ slot18 = st.empty()
 slot19 = st.empty()
 slot20 = st.empty()
 
-st.header("I Had A Dream Like This")
-
 
 
 while True:
@@ -170,6 +168,7 @@ while True:
     time.sleep(.5)
 
     newslot = st.empty()
+    slot1.empty()
 
     col2 = newslot.columns(4)
     col2[0].write(x1)
@@ -182,12 +181,19 @@ while True:
     y3 = chooseRandomText()
     y4 = chooseRandomText()
 
-    cols = slot1.columns(4)
-    cols[0].write(y1)
-    cols[1].write(y2)
-    cols[2].write(y3)
-    cols[3].write(y4)
+    colB = slot1.columns(4)
+    colB[0].write(y1)
+    colB[1].write(y2)
+    colB[2].write(y3)
+    colB[3].write(y4)
 
     time.sleep(.5)
 
     slot1.empty()
+    newslot.empty()
+
+    colC = slot2.columns(4)
+    colC[0].write(x1)
+    colC[1].write(x2)
+    colC[2].write(x3)
+    colC[3].write(x4)
