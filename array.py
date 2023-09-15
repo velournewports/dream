@@ -190,7 +190,6 @@ while True:
     time.sleep(.5)
 
     slot1.empty()
-    newslot.empty()
 
     colC = slot2.columns(4)
     colC[0].write(x1)
